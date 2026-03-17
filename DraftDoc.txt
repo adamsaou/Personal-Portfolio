@@ -11,6 +11,7 @@ Folder structure:
     ├── projects.css  
     ├── skills.css    
     └── contact.css   
+    └── global.css
 
 
 Fonts:

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">  
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+</head>
+<script>
+function copyEmail() {
+    const email = "saoudani.adam@gmail.com";
+
+    navigator.clipboard.writeText(email).then(() => {
+        const popup = document.getElementById("copy-popup");
+
+        popup.style.display = "block";
+
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 2000);
+    }).catch(err => {
+        console.error("Failed to copy: ", err);
+    });
+}
+</script>
+<body>
+<div class="container">
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Contact Me</h1>
+
+<section class="flex-center">
+
+<div class="nes-container is-dark with-title contact-box">
+    <p class="title">Find Me Online</p>
+
+    <div class="socials">
+
+        <a href="https://www.instagram.com/inazumaisnotavailble/" target="_blank">
+            <i class="nes-icon instagram is-large"></i>
+        </a>
+
+        <a href="https://github.com/adamsaou/" target="_blank">
+            <i class="nes-icon github is-large"></i>
+        </a>
+
+        <div class="gmail-copy" onclick="copyEmail()">
+            <i class="nes-icon gmail is-large"></i>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="copy-popup" class="nes-container is-dark copy-popup">
+    <p>Copied</p>
+</div>
+
+</section>
+
+</div>
+</body>
+</html>
