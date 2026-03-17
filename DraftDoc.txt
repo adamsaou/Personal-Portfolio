@@ -1,0 +1,18 @@
+Folder structure:
+/Personal Portfolio
+│
+├── index.html        
+├── projects.html     
+├── skills.html       
+├── contact.html      
+│
+└── css/
+    ├── home.css      
+    ├── projects.css  
+    ├── skills.css    
+    └── contact.css   
+
+
+Fonts:
+(https://fonts.google.com/specimen/Press+Start+2P)
+(https://fonts.google.com/specimen/DotGothic16)
