@@ -1,0 +1,93 @@
+:root {
+    --bg-color: #212529;
+    --text-color: #ffffff;
+    --accent-color: #209cee;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: "Press Start 2P", cursive;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.nes-container {
+    border-width: 4px !important;
+    background-color: #fff;
+    color: #000;
+    margin-top: 1.5rem;
+}
+
+.nes-octocat {
+    animation: float 2s ease-in-out infinite;
+    margin-top: 20px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px);} 
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #f7d51d;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px #000;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 4px solid #fff;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+
+
+nav a:hover {
+    color:var(--accent-color);
+}
+
+button {
+    font-family: "Press Start 2P", cursive;
+}
+
